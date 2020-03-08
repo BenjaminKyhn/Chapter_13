@@ -1,20 +1,17 @@
 import java.util.Date;
 
-public class Listing_13_1 {
-}
-
-abstract class GeometriObject{
+public abstract class GeometricObject {
     private String color = "white";
     private boolean filled;
     private Date dateCreated;
 
     /** Construct a default geometric object */
-    protected GeometriObject(){
+    protected GeometricObject(){
         dateCreated = new Date();
     }
 
     /** Construct a geometric object with a color and filled value */
-    protected GeometriObject(String color, boolean filled){
+    protected GeometricObject(String color, boolean filled){
         dateCreated = new Date();
         this.color = color;
         this.filled = filled;
